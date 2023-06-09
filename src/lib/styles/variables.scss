@@ -1,0 +1,27 @@
+$color-black: #000000;
+$color-gray: #555555;
+$color-navy: #000080;
+$color-white: #ffffff;
+$color-wheat: #ecd6b2;
+$color-wheat-light: #faf5ee;
+
+$font-accent: 'Verdana', 'sans-serif';
+$font-basic: 'Times New Roman', 'serif';
+
+@mixin desktop {
+	@media (min-width: 768px) {
+		@content;
+	}
+}
+
+@mixin default-interactive {
+	transition: opacity 0.3s ease-in-out;
+
+	&:hover {
+		opacity: 0.6;
+	}
+
+	&:active {
+		opacity: 0.3;
+	}
+}

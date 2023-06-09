@@ -1,0 +1,33 @@
+@media print {
+	html {
+		font-size: 12pt;
+
+		// stylelint-disable selector-max-universal
+		* {
+			font-family: 'Times New Roman', serif;
+			color: inherit;
+			background-color: transparent;
+			box-shadow: none;
+		}
+
+		a {
+			text-decoration: none;
+
+			&[href]::after {
+				content: '[' attr(href) ']';
+				position: static;
+				display: inline;
+				margin-left: 0.25rem;
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+@page: left {
+	margin: 0.75in 0.75in 1.125in 0.62in;
+}
+
+@page: right {
+	margin: 0.75in 0.62in 1.125in 0.75in;
+}

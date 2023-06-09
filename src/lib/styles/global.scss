@@ -1,0 +1,36 @@
+html {
+	min-width: 320px;
+	font-size: 18px;
+	line-height: 1.2;
+	font-family: $font-basic;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	-webkit-tap-highlight-color: transparent;
+	text-rendering: optimizeLegibility;
+	scroll-behavior: smooth;
+	overflow-anchor: none;
+}
+
+body {
+	margin: 0;
+	background-color: $color-wheat;
+
+	@include desktop {
+		margin: 0 10px;
+	}
+}
+
+a {
+	text-decoration-skip-ink: none;
+	color: $color-navy;
+
+	@include default-interactive;
+}
+
+p {
+	margin: 0;
+}
+
+:focus-visible {
+	outline: 2px solid;
+}
