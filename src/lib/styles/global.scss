@@ -34,3 +34,8 @@ p {
 :focus-visible {
 	outline: 2px solid;
 }
+
+.visually-hidden {
+	position: fixed;
+	transform: scale(0);
+}
